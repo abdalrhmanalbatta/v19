@@ -3,28 +3,29 @@
 use Illuminate\Support\Facades\Route;
 
 /*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
+    get
+    post
+    put
+    patch
+    delete
 */
-
-Route::get('/', function () {
-    return view('welcome');
+Route::get ('/', function () {
+    return "Hello, World!";
 });
 
-Route::get('/about', function () {
-    return view('welcome');
-});
+// Route::post ('/', 'action');
+// Route::put ('/', 'action');
+// Route::patch ('/', 'action');
+// Route::delete ('/', 'action');
 
-Route::get('/contact', function () {
-    return view('welcome');
-});
+// Class Car {
 
-Route::get('/blog', function () {
-    return view('welcome');
-});
+//    public static function getName () {
+//         return "Car Name";
+//     }
+
+// }
+
+// Car::getName ();
+// $BMW = new Car ();
+// $BMW->getName ();
