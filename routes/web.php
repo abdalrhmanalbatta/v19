@@ -24,3 +24,7 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('welcome');
 });
+
+Route::get('/blog', function () {
+    return view('welcome');
+});
